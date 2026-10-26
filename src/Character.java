@@ -1,5 +1,4 @@
 public class Character {
-
     String name;
     int age;
 

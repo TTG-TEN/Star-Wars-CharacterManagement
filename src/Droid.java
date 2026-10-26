@@ -6,5 +6,15 @@ class Droid extends Character {
     System.out.println("Droid is scanning the area!");
 
 }
+@Override
+    void showinfo() {
+
+    System.out.println(name + " " + age);
+}
+
+
+
+
+
 
 }
