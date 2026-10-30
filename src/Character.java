@@ -1,6 +1,11 @@
 public class Character {
-    String name;
-    int age;
+   protected String name;
+     private int age;
+
+    public Character(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     void action() {
         System.out.println("Character is doing something");
@@ -8,6 +13,11 @@ public class Character {
 
 void showinfo() {
 
-    System.out.println(name + " " + age);
+    System.out.println("Name: " + name);
+    System.out.println("Age: " + age);
+    }
+
+public final void goLive() {
+    System.out.println(name + " has entered the game");
 }
 }

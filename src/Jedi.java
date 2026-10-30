@@ -1,13 +1,23 @@
-class Jedi extends Character {
+public class Jedi extends Character implements ForceUser {
+    public Jedi(String name, int age) {
+        super(name, age);
+    }
 
     @Override
     void action() {
-        System.out.println("Jedi swings their lightsaber!");
+
+        super.showinfo();
+        System.out.println( name + " swings their lightsaber!");
     }
 
-    @Override
-    void showinfo() {
+    public void meditate() {
+        System.out.println( name + " meditates ");
 
-        System.out.println(name +" "+ age);
+
     }
+@Override
+    public void useForce() {
+    System.out.println( name + " uses Force Push");
+}
+
 }

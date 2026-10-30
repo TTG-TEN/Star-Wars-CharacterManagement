@@ -1,15 +1,19 @@
-class Sith extends Character {
+class Sith extends Character implements ForceUser {
+    public Sith(String name, int age) {
+        super(name, age);
+    }
 
     @Override
     void action() {
-        System.out.println("Sith swings their lightsaber!");
+        super.showinfo();
+
+        System.out.println(name + " throws his lightsaber");
 
     }
-
-@Override
-    void showinfo() {
-
-    System.out.println(name + " " + age);
+ @Override
+    public void useForce() {
+        System.out.println(name + " force chokes!");
+    }
 }
 
-}
+

@@ -1,16 +1,16 @@
 class Droid extends Character {
+    public Droid(String name, int age) {
+        super(name, age);
+    }
 
-@Override
+    @Override
     void action() {
+        super.showinfo();
+    System.out.println( name + " is scanning the area!");
 
-    System.out.println("Droid is scanning the area!");
 
-}
-@Override
-    void showinfo() {
+ }
 
-    System.out.println(name + " " + age);
-}
 
 
 
